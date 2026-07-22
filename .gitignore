@@ -1,0 +1,52 @@
+# Virtual Environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code
+.vscode/
+
+# Flask Upload
+static/uploads/*
+
+# Keep Folder
+!static/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Backup files
+*_backup.py
+*_backup.html
+app_lama.py
+
+# Test audio
+*.wav
+
+# Training files
+*.pkl
+*.npy
+
+# CSV output
+prediction_result.csv
+wrong_prediction.csv
+
+# Zip
+*.zip
+
+# Temporary notebooks
+Untitled*.ipynb
+
+# MacOS / Windows metadata
+*.log
+
+# Flask cache
+instance/
