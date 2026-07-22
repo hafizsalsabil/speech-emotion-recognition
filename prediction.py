@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 # ==========================================
 
 model = load_model(
-    "ser_model_augmented.keras"
+    "ser_model_augmented.h5"
 )
 
 emotion_names = [
