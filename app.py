@@ -306,8 +306,6 @@ def predict():
 
     csv_results = []
 
-    for r in results:
-    
     emotion_translation = {
         "Anger": "Marah",
         "Sadness": "Sedih",
@@ -349,7 +347,7 @@ def predict():
             row["Sedih (%)"] = "-"
             row["Netral (%)"] = "-"
             row["Senang (%)"] = "-"
-
+    
         csv_results.append(row)
 
     df = pd.DataFrame(csv_results)
