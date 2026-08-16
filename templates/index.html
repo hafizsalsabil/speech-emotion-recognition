@@ -279,18 +279,20 @@
 
                             <h3 class="text-success">
 
-                                {% if result.prediction == "Anger" %}
+                                {% if result.emotion == "Anger" %}
                                     Marah
-                                {% elif result.prediction == "Sadness" %}
+                                {% elif result.emotion == "Sadness" %}
                                     Sedih
-                                {% elif result.prediction == "Neutral" %}
+                                {% elif result.emotion == "Neutral" %}
                                     Netral
-                                {% elif result.prediction == "Happiness" %}
+                                {% elif result.emotion == "Happiness" %}
                                     Senang
+                                {% else %}
+                                    {{ result.emotion }}
                                 {% endif %}
-
+                            
                             </h3>
-
+                            
                             <p>
 
                                 Tingkat Keyakinan
