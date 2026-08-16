@@ -307,40 +307,48 @@ def predict():
     csv_results = []
 
     for r in results:
-
+    
+    emotion_translation = {
+        "Anger": "Marah",
+        "Sadness": "Sedih",
+        "Neutral": "Netral",
+        "Happiness": "Senang"
+    }
+    
+    status_translation = {
+        "Success": "Berhasil",
+        "Failed": "Gagal"
+    }
+    
+    for r in results:
+    
         row = {
-
-            "Filename": r["filename"],
-
-            "Prediction": r["emotion"],
-
-            "Confidence (%)": r["confidence"],
-
-            "Duration (s)": r["duration"],
-
-            "Status": r["status"]
-
+            "Nama File": r["filename"],
+            "Prediksi": emotion_translation.get(
+                r["emotion"],
+                r["emotion"]
+            ),
+            "Tingkat Keyakinan (%)": r["confidence"],
+            "Durasi (detik)": r["duration"],
+            "Status": status_translation.get(
+                r["status"],
+                r["status"]
+            )
         }
-
+    
         if r["probabilities"]:
-
-            row["Anger (%)"] = r["probabilities"]["Anger"]
-
-            row["Sadness (%)"] = r["probabilities"]["Sadness"]
-
-            row["Neutral (%)"] = r["probabilities"]["Neutral"]
-
-            row["Happiness (%)"] = r["probabilities"]["Happiness"]
-
+    
+            row["Marah (%)"] = r["probabilities"]["Anger"]
+            row["Sedih (%)"] = r["probabilities"]["Sadness"]
+            row["Netral (%)"] = r["probabilities"]["Neutral"]
+            row["Senang (%)"] = r["probabilities"]["Happiness"]
+    
         else:
-
-            row["Anger (%)"] = "-"
-
-            row["Sadness (%)"] = "-"
-
-            row["Neutral (%)"] = "-"
-
-            row["Happiness (%)"] = "-"
+    
+            row["Marah (%)"] = "-"
+            row["Sedih (%)"] = "-"
+            row["Netral (%)"] = "-"
+            row["Senang (%)"] = "-"
 
         csv_results.append(row)
 
