@@ -118,7 +118,7 @@
 
                     <i class="bi bi-download"></i>
 
-                    Download Prediction Result CSV
+                    Download Hasil Prediksi CSV
 
                 </a>
 
@@ -279,7 +279,15 @@
 
                             <h3 class="text-success">
 
-                                {{ result.emotion }}
+                                {% if result.prediction == "Anger" %}
+                                    Marah
+                                {% elif result.prediction == "Sadness" %}
+                                    Sedih
+                                {% elif result.prediction == "Neutral" %}
+                                    Netral
+                                {% elif result.prediction == "Happiness" %}
+                                    Senang
+                                {% endif %}
 
                             </h3>
 
