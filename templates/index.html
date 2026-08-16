@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
 
@@ -10,7 +10,7 @@
 
     <title>
 
-        Speech Emotion Recognition
+        Pengenalan Emosi Suara
 
     </title>
 
@@ -38,7 +38,7 @@
 
             <i class="bi bi-soundwave"></i>
 
-            Speech Emotion Recognition
+            Pengenalan Emosi Suara
 
         </h1>
 
@@ -58,7 +58,7 @@
 
                 <i class="bi bi-folder2-open"></i>
 
-                Multiple Audio Prediction
+                Prediksi Beberapa Audio
 
             </h4>
 
@@ -96,7 +96,7 @@
 
                     <i class="bi bi-cpu-fill"></i>
 
-                    Predict Emotion
+                    Prediksi Emosi
 
                 </button>
 
@@ -108,7 +108,7 @@
 
                 <h5 class="fw-semibold text-success mb-3">
 
-                    Prediction Completed
+                    Prediksi Selesai
 
                 </h5>
 
@@ -128,7 +128,7 @@
 
             <h3 class="fw-bold mb-4">
                 <i class="bi bi-bar-chart-fill"></i>
-                Prediction Summary
+                Ringkasan Prediksi
             </h3>
 
             <div class="row g-4">
@@ -140,7 +140,7 @@
                         <div class="card-body text-center">
 
                             <h6 class="text-muted">
-                                Total Audio
+                                Jumlah Audio
                             </h6>
 
                             <h2 class="fw-bold text-primary">
@@ -160,7 +160,7 @@
                         <div class="card-body text-center">
 
                             <h6 class="text-muted">
-                                Average Confidence
+                                Rata-rata Tingkat Keyakinan
                             </h6>
 
                             <h2 class="fw-bold text-success">
@@ -181,7 +181,7 @@
 
                             <h6 class="mb-3">
 
-                                Emotion Distribution
+                                Distribusi Emosi
 
                             </h6>
 
@@ -189,7 +189,7 @@
 
                                 <tr>
 
-                                    <td>😠 Anger</td>
+                                    <td>😠 Marah</td>
 
                                     <td class="text-end">
 
@@ -201,7 +201,7 @@
 
                                 <tr>
 
-                                    <td>😢 Sadness</td>
+                                    <td>😢 Sedih</td>
 
                                     <td class="text-end">
 
@@ -213,7 +213,7 @@
 
                                 <tr>
 
-                                    <td>😐 Neutral</td>
+                                    <td>😐 Netral</td>
 
                                     <td class="text-end">
 
@@ -225,7 +225,7 @@
 
                                 <tr>
 
-                                    <td>😊 Happiness</td>
+                                    <td>😊 Senang</td>
 
                                     <td class="text-end">
 
@@ -251,7 +251,7 @@
 
                 <i class="bi bi-stars"></i>
 
-                Prediction Result
+                Hasil Prediksi
 
             </h3>
 
@@ -273,7 +273,7 @@
 
                             <p class="mb-1">
 
-                                <strong>Prediction</strong>
+                                <strong>Prediksi</strong>
 
                             </p>
 
@@ -285,7 +285,7 @@
 
                             <p>
 
-                                Confidence
+                                Tingkat Keyakinan
 
                             </p>
 
@@ -301,7 +301,7 @@
 
                             <!-- Anger -->
                             <p class="mb-1">
-                                😠 Anger
+                                😠 Marah
                                 <span class="float-end">
                                     {{ result.probabilities["Anger"] }}%
                                 </span>
@@ -319,7 +319,7 @@
 
                             <!-- Sadness -->
                             <p class="mb-1">
-                                😢 Sadness
+                                😢 Sedih
                                 <span class="float-end">
                                     {{ result.probabilities["Sadness"] }}%
                                 </span>
@@ -337,7 +337,7 @@
 
                             <!-- Neutral -->
                             <p class="mb-1">
-                                😐 Neutral
+                                😐 Netral
                                 <span class="float-end">
                                     {{ result.probabilities["Neutral"] }}%
                                 </span>
@@ -355,7 +355,7 @@
 
                             <!-- Happiness -->
                             <p class="mb-1">
-                                😊 Happiness
+                                😊 Senang
                                 <span class="float-end">
                                     {{ result.probabilities["Happiness"] }}%
                                 </span>
